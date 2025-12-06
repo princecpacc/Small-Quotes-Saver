@@ -202,9 +202,9 @@ button.muted{
 }
 
 #quotes-list {
-  max-height: 250px;   /* Adjust height if you want */
-  overflow-y: auto;     /* Enables vertical scrollbar if needed */
-  padding-right: 8px;   /* Prevents text being hidden behind scrollbar */
+  max-height: 250px; 
+  overflow-y: auto;   
+  padding-right: 8px;   
 }
 
 a{
