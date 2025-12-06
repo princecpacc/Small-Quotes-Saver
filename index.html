@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mini Quote Saver</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container" id="app">
+    <header class="header">
+      <h1 class="title">Mini Quote Saver</h1>
+      <p class="subtitle">Save small quotes locally — they persist using <code>localStorage</code>.</p>
+    </header>
+
+    <section class="controls" aria-label="Add a new quote">
+      <label for="quote-input" class="visually-hidden">Quote</label>
+      <input id="quote-input" type="text" placeholder="Type a quote and press Add or Enter" autocomplete="off" />
+      <button id="add-quote-btn" aria-label="Add quote">Add Quote</button>
+      <button id="clear-all-btn" class="muted" aria-label="Clear all quotes">Clear All</button>
+    </section>
+
+    <section class="meta">
+      <div id="quote-count" aria-live="polite">0 quotes</div>
+    </section>
+
+    <section class="list-section" aria-label="Saved quotes">
+      <ul id="quotes-list" class="quotes-list">
+        <!--
+          JS will render <li> items here.
+          Suggested structure for each item:
+          <li class="quote-item" data-id="...">
+            <div class="quote-text">...quote text...</div>
+            <button class="delete-btn" data-index=''>✕</button>
+          </li>
+
+        -->
+      </ul>
+
+      <div id="empty-state" class="empty-state">
+        <p>No quotes yet — add your first quote above.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <small>© Prince -- <a href="https://github.com/princecpacc">Github</a> </small>
+    </footer>
+
+    <script src="script.js">
+
+    </script>
+  </main>
+</body>
+</html>
